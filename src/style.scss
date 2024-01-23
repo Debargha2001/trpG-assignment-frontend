@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+.home-wrapper {
+  width: 100%;
+  .home-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    .home-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .home-header {
+        h1 {
+          text-align: center;
+          font-family: "Poppins";
+          font-size: 2rem;
+          font-weight: 500;
+        }
+      }
+      .home-details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        .home-add-employee {
+          button {
+            width: 150px;
+            height: 50px;
+            outline: none;
+            border-radius: 10px;
+            background: rgb(0, 140, 255);
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-family: "Poppins";
+            font-size: 1rem;
+            font-weight: 500;
+          }
+        }
+        .home-add-search {
+          display: flex;
+          gap: 20px;
+          input {
+            width: 200px;
+            height: 25px;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid #ddd;
+            font-family: "Poppins";
+            font-size: 1rem;
+            font-weight: 500;
+            color: #5c5b5b;
+          }
+          select {
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid #ddd;
+            font-family: "Poppins";
+            font-size: 0.8rem;
+            font-weight: 400;
+          }
+        }
+        .home-sort-filter {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          select {
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid #ddd;
+            font-family: "Poppins";
+            font-size: 0.8rem;
+            font-weight: 400;
+          }
+          .home-sort-condition{
+            display: flex;
+            gap: 10px;
+          }
+        }
+        .table-container {
+          width: 100%;
+          .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 0;
+            font-size: 18px;
+            text-align: left;
+            thead {
+              tr {
+                background-color: #f8f8f8;
+                border-bottom: 1px solid #ddd;
+                th {
+                  padding: 10px;
+                }
+              }
+            }
+            tbody {
+              tr {
+                &:hover {
+                  background-color: #f5f5f5;
+                }
+                td {
+                  padding: 10px;
+                  .table-actions {
+                    display: flex;
+                    gap: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
